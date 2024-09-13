@@ -1,0 +1,167 @@
+.input-nav{
+    height: 40px;
+    padding: 0 16px 0 8px;
+    border-radius: 20px;
+    border: 2px solid rgb(232, 232, 232);
+    transition: border-color .2s ease-in-out;
+}
+.search-icon{
+    width: 22px;
+    height: 24px;
+    opacity: .7;
+    border-radius: 50%;
+    background-size: 18px;
+    transition: opacity .2s ease-in-out;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+}
+.btn-dangnhap{
+    padding: 9px 20px;
+    border-radius: 99px;
+    color: #fff;
+    background: linear-gradient(to right bottom, #ff8f26, #ff5117);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .25s;
+
+}
+.nav-fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    border-bottom: 1px solid #e8ebed;
+    border-top: 1px solid #e8ebed;
+}
+.flex-important{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.slick-list {
+    border-radius: 18px;
+}
+.backgr-1{
+   
+    overflow: hidden;
+}
+.text-slider{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 640px;
+    max-width: 100%;
+    padding: 0 36px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.p-text{
+    max-width: 600px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+.learn-free{
+    text-align: center;
+    display: inline-block;
+    min-width: 124px;
+    padding: 4px 10px;
+    color: #fff;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: ease .2s;
+    text-decoration: none;
+}
+.slick-dots {
+    display: flex !important;
+    bottom: -40px !important;
+    left: 48px !important;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+body .slick-dots li {
+    margin-right: 28px; /* Thêm khoảng cách giữa các dots */
+}
+
+body .slick-dots li:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách cho dot cuối cùng */
+}
+body .slick-dots li button:before {
+    content: "";
+    width:40px;
+    height: 8px;
+    opacity: 1;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #dce0e3;
+    transition: width .3s linear, background-color .3s linear;
+}
+body .slick-dots li.slick-active button:before {
+    width: 50px;
+     
+    margin-left: -3px; /* Thêm khoảng cách giữa các dots */
+    background-color: #9aa6af;
+}
+.slick-next:before, .slick-prev:before {
+
+    color: #998282 !important;
+}
+@media screen and (max-width: 992px) {
+    .btn-dangnhap{
+        font-size: 0.9rem;
+    }
+    .btn-dangky{
+        font-size: 0.9rem;
+    }
+   
+}
+@media screen and (max-width: 540px) {
+    .slick-dots {
+        bottom: -24px !important;
+        left: 12px !important;
+  
+    }
+}
+
+@media screen and (max-width: 500px) {
+.fz-20{
+    font-size: 20px !important;
+}
+}
+@media screen and (max-width: 436px) {
+    .btn-dangnhap{
+        padding: 5px 12px;
+    }
+    .input-nav {
+        height: 37px;
+        padding: 0 12px 0 8px;
+        border-radius: 20px;
+        border: 2px solid rgb(232, 232, 232);
+        transition: border-color .2s ease-in-out;
+    }
+}
+@media screen and (max-width: 400px) {
+    .btn-dangnhap{
+        padding: 5px 8px;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    .btn-dangnhap{
+        padding: 5px 1px;
+    }
+    .slick-dots {
+        bottom: -32px !important;
+        left: -3px !important;
+  
+    }
+}
