@@ -1,7 +1,6 @@
 // src/home/HomePage.tsx
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../../css/home.css';
-import { Link } from 'react-router-dom';
 import courseService from '../../services/courseService';
 import useSWR from 'swr';
 import blogService from '../../services/blogService';
@@ -87,7 +86,7 @@ const HomePage: React.FC = () => {
             <div className="row pb-8">
                 {CourseList.map((course, index) => (
                     course.price > 0 && (
-                        <div className="col-lg-3 col-md-4 col-6 mb-8">
+                        <div key={index} className="col-lg-3 col-md-4 col-6 mb-8">
                             <div className="_wrapper_101pg_1 _courseItem_ceh3w_11">
                                 <a href="_link_101pg_16{">
                                     <img className="_thumb_101pg_25" src={course.thumbnailUrl} alt="HTML CSS Pro"></img>
@@ -101,7 +100,7 @@ const HomePage: React.FC = () => {
                                     <div className="_moreInfo_ptypy_68">
                                         <div className="_infoItem_ptypy_1 avatar-none" title="Người hướng dẫn: Sơn Đặng">
                                             <div className="_avatar_hzxfy_1">
-                                                <img className='avatar-huy ' src={course.instructor.avatarUrl} />
+                                                <img className='avatar-huy ' src={course.instructor.avatarUrl} alt='avatar'/>
                                             </div>
                                             <span>{course.instructor.fullName}</span>
                                         </div>
@@ -130,7 +129,7 @@ const HomePage: React.FC = () => {
             <div className="row pb-8">
                 {CourseList.map((course, index) => (
                     course.price === 0 && (
-                        <div className="col-lg-3 col-md-4 col-6 mb-8">
+                        <div key={index} className="col-lg-3 col-md-4 col-6 mb-8">
                             <div className="_wrapper_101pg_1 _courseItem_ceh3w_11">
                                 <a href="_link_101pg_16{">
                                     <img className="_thumb_101pg_25" src={course.thumbnailUrl} alt="HTML CSS Pro"></img>
@@ -143,7 +142,7 @@ const HomePage: React.FC = () => {
                                     <div className="_moreInfo_ptypy_68">
                                         <div className="_infoItem_ptypy_1 avatar-none" title="Người hướng dẫn: Sơn Đặng">
                                             <div className="_avatar_hzxfy_1">
-                                                <img className='avatar-huy' src={course.instructor?.avatarUrl} />
+                                                <img className='avatar-huy' src={course.instructor?.avatarUrl} alt='avatar' />
                                             </div>
                                             <span>{course.instructor?.fullName}</span>
                                         </div>
@@ -172,17 +171,17 @@ const HomePage: React.FC = () => {
             <div className="row pb-8">
 
                 {blogList.map((blog, index) => (
-                    <div className="col-lg-3 col-md-4 col-6 mb-8">
+                    <div key={index} className="col-lg-3 col-md-4 col-6 mb-8">
                         <div className="_wrapper_101pg_1 _courseItem_ceh3w_11">
                             <a href="_link_101pg_16{">
                                 <img className="_thumb_101pg_25 h-40 w-full" src={blog.image} alt="HTML CSS Pro"></img>
                             </a>
                             <div className="_content_101pg_34">
-                                <h3 className="_title_101pg_52"><a target="_self" href="/landing/htmlcss/"><a href="/blog/tong-hop-cac-san-pham-cua-hoc-vien-tai-f8" target="_self">{blog.name}</a></a></h3>
+                                <h3 className="_title_101pg_52"><a href="/blog/tong-hop-cac-san-pham-cua-hoc-vien-tai-f8" target="_self">{blog.name}</a></h3>
                                 <div className="_moreInfo_ptypy_68-author">
                                     <div className="_infoItem_ptypy_1 avatar-none" title="Người hướng dẫn: Sơn Đặng">
                                         <div className="_avatar_hzxfy_1">
-                                            <img className='avatar-huy ' src={blog.instructor?.avatarUrl} />
+                                            <img className='avatar-huy ' src={blog.instructor?.avatarUrl} alt='avatar'/>
                                         </div>
                                         <span>{blog.instructor?.fullName}</span>
                                     </div>
