@@ -17,6 +17,9 @@
     background-color: #fff;
 
 }
+.magin-top-2{
+    margin-top: -2px;
+}
 .btn-dangnhap{
     padding: 9px 20px;
     border-radius: 99px;
@@ -34,7 +37,7 @@
     right: 0;
     z-index: 20;
     border-bottom: 1px solid #e8ebed;
-    border-top: 1px solid #e8ebed;
+
 }
 .flex-important{
     display: flex !important;

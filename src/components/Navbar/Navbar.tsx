@@ -4,66 +4,14 @@ import React from "react";
 import '../../css/navbar.css';
 import Slider from "react-slick";
 import Slide from "../slider/Slide";
+import { Link, useLocation } from "react-router-dom";
 export function Navbar() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: true,     
-    autoplaySpeed: 3000, 
-  };
-  const slideData = [
-    {
-      title: 'Mở bán khóa JavaScript Pro',
-      description:
-        'Từ 08/08/2024 khóa học sẽ có giá 1.399k (-200k nếu pre-order khóa HTML CSS Pro). Khi full khóa học sẽ trở về giá gốc.',
-      imgSrc: '/image/slider1.png',
-      altText: 'slider1',
-      link: '#',
-      background: 'linear-gradient(to right, rgb(138, 10, 255), rgb(96, 6, 255))', // Use background for gradients
-    },
-    {
-      title: 'Lớp Offline tại Hà Nội',
-      description:
-        'Hình thức học Offline phù hợp nếu bạn muốn được hướng dẫn và hỗ trợ trực tiếp tại lớp. Giờ học linh hoạt, phù hợp cả sinh viên và người đi làm.',
-      imgSrc: '/image/slider2.png',
-      altText: 'slider2',
-      link: '#',
-      background: 'linear-gradient(to right, rgb(136, 40, 250), rgb(89, 169, 250))', // Use background for gradients
-    },
-    {
-      title: 'Học HTML CSS cho người mới',
-      description:
-        'Thực hành dự án với Figma, hàng trăm bài tập và thử thách, hướng dẫn 100% bởi Sơn Đặng, tặng kèm Flashcards, v.v.',
-      imgSrc: '/image/slider3.png',
-      altText: 'slider3',
-      link: '#',
-      background: 'linear-gradient(to right, rgb(104, 40, 250), rgb(255, 186, 164))', // Use background for gradients
-    },
-    {
-      title: 'Học ReactJS Miễn Phí!',
-      description:
-        'Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS.',
-      imgSrc: '/image/slider4.png',
-      altText: 'slider4',
-      link: '#',
-      background: 'linear-gradient(to right, rgb(40, 119, 250), rgb(103, 23, 205))', // Use background for gradients
-    },
-    {
-      title: 'Thành Quả của Học Viên',
-      description:
-        'Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không là ngoại lệ.',
-      imgSrc: '/image/slider5.png',
-      altText: 'slider5',
-      link: '#',
-      background: 'linear-gradient(to right, rgb(118, 18, 255), rgb(5, 178, 255))', // Use background for gradients
-    },
-    // Add more slides as needed
-  ];
+  const location = useLocation();  // Lấy URL hiện tại
+
+  // Kiểm tra nếu URL bắt đầu bằng /courses thì đổi nội dung Link thành "Quay lại"
+  const isCourseDetailPage = location.pathname.startsWith("/courses");
   return (
+    
     <>
     <link
       rel="stylesheet"
@@ -80,7 +28,19 @@ export function Navbar() {
      <div className="row items-center">
         <div className="col-lg-3 col-2 flex items-center">
          <img className="w-9" src="/image/logo.png" alt="logo" />
-          <p className="mb-0 ml-4 font-bold text-black max-[992px]:hidden">Học Lập Trình Để Đi Làm</p>
+         <Link
+  to="/"
+  className={`no-underline mb-0 ml-4 font-bold ${isCourseDetailPage ? 'text-slate-600' : 'text-black'} max-[992px]:hidden`}
+>
+{isCourseDetailPage ? (
+    <div className="flex justify-center items-center">
+     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" className="svg-inline--fa fa-chevron-left w-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg>
+     <span className="ml-1 magin-top-2">Quay lại</span>
+    </div>
+  ) : (
+    "Học Lập Trình Để Đi Làm"
+  )}
+            </Link>
         </div>
         <div className="col-lg-6 col-6 flex justify-center max-[992px]:justify-start">
           <div className="w-2/3 flex justify-center items-center  input-nav max-[992px]:w-full">
@@ -94,21 +54,7 @@ export function Navbar() {
           </div>
       </div>
      </nav>
-     <div className="pb-12 pt-24 px-12">
-     <Slider {...settings}>
-        {slideData.map((slide, index) => (
-          <Slide
-            key={index}
-            title={slide.title}
-            description={slide.description}
-            imgSrc={slide.imgSrc}
-            altText={slide.altText}
-            link={slide.link}
-            background={slide.background} // Pass the background color
-          />
-        ))}
-      </Slider>
-      </div>
+     
     </div>
      </>
   );

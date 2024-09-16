@@ -5,6 +5,9 @@ import courseService from '../../services/courseService';
 import useSWR from 'swr';
 import blogService from '../../services/blogService';
 import { Oval } from "react-loader-spinner";
+import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import Slide from '../slider/Slide';
 const HomePage: React.FC = () => {
 
     const { data: CourseList, error: courseError } = useSWR(
@@ -74,8 +77,82 @@ const HomePage: React.FC = () => {
             strokeWidthSecondary={2}
         />
     </div>;
-
+var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,     
+    autoplaySpeed: 3000, 
+  };
+  const slideData = [
+    {
+      title: 'Mở bán khóa JavaScript Pro',
+      description:
+        'Từ 08/08/2024 khóa học sẽ có giá 1.399k (-200k nếu pre-order khóa HTML CSS Pro). Khi full khóa học sẽ trở về giá gốc.',
+      imgSrc: '/image/slider1.png',
+      altText: 'slider1',
+      link: '#',
+      background: 'linear-gradient(to right, rgb(138, 10, 255), rgb(96, 6, 255))', // Use background for gradients
+    },
+    {
+      title: 'Lớp Offline tại Hà Nội',
+      description:
+        'Hình thức học Offline phù hợp nếu bạn muốn được hướng dẫn và hỗ trợ trực tiếp tại lớp. Giờ học linh hoạt, phù hợp cả sinh viên và người đi làm.',
+      imgSrc: '/image/slider2.png',
+      altText: 'slider2',
+      link: '#',
+      background: 'linear-gradient(to right, rgb(136, 40, 250), rgb(89, 169, 250))', // Use background for gradients
+    },
+    {
+      title: 'Học HTML CSS cho người mới',
+      description:
+        'Thực hành dự án với Figma, hàng trăm bài tập và thử thách, hướng dẫn 100% bởi Sơn Đặng, tặng kèm Flashcards, v.v.',
+      imgSrc: '/image/slider3.png',
+      altText: 'slider3',
+      link: '#',
+      background: 'linear-gradient(to right, rgb(104, 40, 250), rgb(255, 186, 164))', // Use background for gradients
+    },
+    {
+      title: 'Học ReactJS Miễn Phí!',
+      description:
+        'Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS.',
+      imgSrc: '/image/slider4.png',
+      altText: 'slider4',
+      link: '#',
+      background: 'linear-gradient(to right, rgb(40, 119, 250), rgb(103, 23, 205))', // Use background for gradients
+    },
+    {
+      title: 'Thành Quả của Học Viên',
+      description:
+        'Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không là ngoại lệ.',
+      imgSrc: '/image/slider5.png',
+      altText: 'slider5',
+      link: '#',
+      background: 'linear-gradient(to right, rgb(118, 18, 255), rgb(5, 178, 255))', // Use background for gradients
+    },
+    // Add more slides as needed
+  ];
     return (
+       <>
+        <div className="pb-12 pt-24 px-12">
+     <Slider {...settings}>
+        {slideData.map((slide, index) => (
+          <Slide
+            key={index}
+            title={slide.title}
+            description={slide.description}
+            imgSrc={slide.imgSrc}
+            altText={slide.altText}
+            link={slide.link}
+            background={slide.background} // Pass the background color
+          />
+        ))}
+      </Slider>
+      </div>
+   
         <div className='container'>
             <h2 className='h2-heading'>
                 <span className=''>Khóa học Pro
@@ -100,7 +177,7 @@ const HomePage: React.FC = () => {
                                     <div className="_moreInfo_ptypy_68">
                                         <div className="_infoItem_ptypy_1 avatar-none" title="Người hướng dẫn: Sơn Đặng">
                                             <div className="_avatar_hzxfy_1">
-                                                <img className='avatar-huy ' src={course.instructor.avatarUrl} alt='avatar'/>
+                                                <img className='avatar-huy ' src={course.instructor.avatarUrl} alt='avatar' />
                                             </div>
                                             <span>{course.instructor.fullName}</span>
                                         </div>
@@ -131,9 +208,13 @@ const HomePage: React.FC = () => {
                     course.price === 0 && (
                         <div key={index} className="col-lg-3 col-md-4 col-6 mb-8">
                             <div className="_wrapper_101pg_1 _courseItem_ceh3w_11">
-                                <a href="_link_101pg_16{">
-                                    <img className="_thumb_101pg_25" src={course.thumbnailUrl} alt="HTML CSS Pro"></img>
-                                </a>
+                                <Link to={`/courses/${course.courseId}`}>
+                                    <img
+                                        className="_thumb_101pg_25"
+                                        src={course.thumbnailUrl}
+                                        alt={course.title}
+                                    />
+                                </Link>
                                 <div className="_content_101pg_34">
                                     <h3 className="_title_101pg_52"><a target="_self" href="/landing/htmlcss/">{course.title}</a></h3>
                                     <div className="_price_ptypy_15">
@@ -181,7 +262,7 @@ const HomePage: React.FC = () => {
                                 <div className="_moreInfo_ptypy_68-author">
                                     <div className="_infoItem_ptypy_1 avatar-none" title="Người hướng dẫn: Sơn Đặng">
                                         <div className="_avatar_hzxfy_1">
-                                            <img className='avatar-huy ' src={blog.instructor?.avatarUrl} alt='avatar'/>
+                                            <img className='avatar-huy ' src={blog.instructor?.avatarUrl} alt='avatar' />
                                         </div>
                                         <span>{blog.instructor?.fullName}</span>
                                     </div>
@@ -200,6 +281,7 @@ const HomePage: React.FC = () => {
                 ))}
             </div>
         </div>
+        </>
     );
 };
 

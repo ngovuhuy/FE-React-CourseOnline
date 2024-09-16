@@ -2,6 +2,7 @@ import BASE_URL from "./apiService";
 
 interface ICourseService {
   getCourses(): Promise<any[]>;
+  getCourseById(id: string): Promise<Course>;   // Lấy khóa học theo id
   }
 
 export const courseService:  ICourseService = {
@@ -21,6 +22,13 @@ export const courseService:  ICourseService = {
             console.error("Error fetching tour list:", error);
             throw error;
           }
+    },
+    getCourseById: async (id: string) => {
+      const response = await fetch(`${BASE_URL}/getCourseById/${id}`);
+      if (!response.ok) {
+        throw new Error("Failed to fetch course");
+      }
+      return await response.json();
     }
 }
 

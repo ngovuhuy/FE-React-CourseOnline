@@ -1,0 +1,494 @@
+._courseName_pzdoh_152 {
+    margin-top: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    min-height: 33px;
+}
+._textContent_pzdoh_171 {
+    margin-top: 16px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #000c;
+}
+._topicList_pzdoh_178 ._topicHeading_pzdoh_178 {
+    font-size: 20px;
+    font-weight: 700;
+}
+._content_pzdoh_11 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.index-module_c-12__u7UXF {
+    width: 100%;
+}
+
+.index-module_col__2EQm9 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.index-module_row__-AHgh {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+._topicList_pzdoh_178 ._list_pzdoh_182 {
+    margin-top: 4px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+._topicList_pzdoh_178 ._list_pzdoh_182 li {
+    position: relative;
+    flex-basis: 50%;
+    margin-top: 12px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+._topicList_pzdoh_178 ._list_pzdoh_182 li ._icon_pzdoh_80 {
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    color: #f05123;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+._headerSticky_1u0ca_215 {
+    padding-bottom: 4px;
+    background-color: #fff;
+}
+._headerBlock_1u0ca_154 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+._curriculumOfCourse_1u0ca_1 h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+._subHeadWrapper_1u0ca_173 {
+    display: flex;
+
+    font-size: 14px;
+}
+._subHeadWrapper_1u0ca_173 ul {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+._subHeadWrapper_1u0ca_173 ._dot_1u0ca_197 {
+    padding: 0 8px;
+    font-size: 14px;
+    opacity: .8;
+    margin-top: 1px;
+}
+._subHeadWrapper_1u0ca_173 li {
+    display: inline-block;
+}
+
+._toggleBtn_1u0ca_204 {
+    margin-left: auto;
+    color: #f05123;
+    font-weight: 600;
+    -webkit-user-select: none;
+    user-select: none;
+}
+._curriculumPanel_1u0ca_17 {
+    margin-top: 20px;
+}
+._panelGroup_1u0ca_21 ._panel_1u0ca_21 {
+    margin-bottom: 8px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+._panel_1u0ca_21 {
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px #0000000d;
+}
+._panelHeading_1u0ca_57 {
+    padding: 0;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    background: #f5f5f5;
+}
+._panelTitle_1u0ca_134 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+}
+._headline_1u0ca_28 {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px 14px 48px;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+}
+._panelHeading_1u0ca_57._activePanel_1u0ca_66 ._headline_1u0ca_28:before {
+    content: "-";
+    font-size: 40px;
+    top: 45%;
+}
+
+._headline_1u0ca_28:before {
+    content: "+";
+    position: absolute;
+    font-size: 26px;
+    font-weight: 300;
+    left: 20px;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #f05123;
+}
+._timeOfSection_1u0ca_6 {
+    min-width: 72px;
+    margin-left: auto;
+    text-align: right;
+    font-size: 14px;
+}
+._collapse_1u0ca_147._in_1u0ca_150 {
+    display: block;
+}
+._panelBody_1u0ca_79 {
+    padding: 0;
+}
+._lessonItem_1u0ca_83 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 30px 0 48px;
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+._iconLink_1u0ca_126 {
+    transition: all .3s ease-in-out;
+}
+._lessonItem_1u0ca_83 span:nth-child(2) {
+    min-width: 69px;
+    text-align: right;
+    flex-shrink: 0;
+}
+._lessonItem_1u0ca_83 ._icon_1u0ca_101._video_1u0ca_111 {
+    color: #f0512366;
+    margin-right: 4px;
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+._lessonItem_1u0ca_83 ._icon_1u0ca_101 {
+    position: absolute;
+    top: 17px;
+    left: 24px;
+}
+.svg-inline--fa {
+    display: inline-block;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+._purchaseBadge_pzdoh_17 {
+    position: sticky;
+    top: 90px;
+    margin-left: 24px;
+    margin-bottom: 60px;
+    background: #fff;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+._imgPreview_pzdoh_86 {
+    width: calc(100% - 2px);
+    margin: 2px 0 20px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}
+._bg_pzdoh_111{
+    width: 100%;
+    padding-top: 56.25%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+._imgPreview_pzdoh_86 ._icon_pzdoh_80 {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .3s linear;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.svg-inline--fa {
+    display: inline-block;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+._imgPreview_pzdoh_86 p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#fff;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+._imgPreview_pzdoh_86:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
+    background-image: linear-gradient(180deg, #1e1e1c00, #1e1e1ce6);
+}
+._purchaseBadge_pzdoh_17 p {
+    font-size: 14px;
+}
+._purchaseBadge_pzdoh_17 h5 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #f05123;
+    margin: 0 auto;
+    opacity: .8;
+}
+._purchaseBadge_pzdoh_17 ._learnNow_pzdoh_53 {
+    margin-top: 16px;
+    min-width: 180px;
+}
+._wrapper_1kk55_1._rounded_1kk55_22 {
+    border-radius: 99px;
+}
+._wrapper_1kk55_1 {
+    display: inline-block;
+    min-width: 148px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #5ebbff;
+    background: linear-gradient(#5ebbff80 40%, #a174ff80);
+    transition: opacity .2s;
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 0;
+    cursor: pointer;
+}
+._primary_1kk55_46 ._inner_1kk55_33 {
+    border: none;
+    background-color: #0093fc;
+}
+._inner_1kk55_33 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 4px 16px;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background-color: var(--comment-button-normal-bg);
+    background-clip: padding-box;
+}
+._primary_1kk55_46 ._title_1kk55_61 {
+    background-image: none;
+    background-color: #fff;
+}
+._title_1kk55_61 {
+    color: transparent;
+    background: linear-gradient(to bottom right, #5ebbff, #a174ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+._purchaseBadge_pzdoh_17 ul {
+    display: inline-block;
+    text-align: left;
+    padding: 24px 0 10px 4px;
+    margin: 0;
+}
+._purchaseBadge_pzdoh_17 ul li {
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 28px;
+    color: #494949;
+}
+._purchaseBadge_pzdoh_17 ul li ._icon_pzdoh_80 {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+.svg-inline--fa {
+    display: inline-block;
+    fill: currentColor;
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    fill: currentColor;
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+@media (min-width: 1113px) {
+    .index-module_row__-AHgh {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .index-module_l-12__340Ve {
+        width: 100%;
+    }
+    .index-module_l-1__3kmgB, .index-module_l-2__2TSUm, .index-module_l-3__MjWvb, .index-module_l-4__3tf5p, .index-module_l-5__2UHWy, .index-module_l-6__JoV9k, .index-module_l-7__kRbS-, .index-module_l-8__yebHm, .index-module_l-9__3moa5, .index-module_l-10__2Xr3t, .index-module_l-11__3EcbJ, .index-module_l-12__340Ve {
+        display: block;
+    }
+    .index-module_col__2EQm9 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media (max-width: 992px) {
+    ._topicList_pzdoh_178 ._list_pzdoh_182 {
+     
+        display: block;
+
+    }
+    .chuong-none {
+        display: none !important;
+    }
+    ._purchaseBadge_pzdoh_17 ._learnNow_pzdoh_53 {
+        width: calc(100% - 32px);
+        margin-top: 32px;
+    }
+}
+@media (max-width: 575.98px) {
+    ._subHeadWrapper_1u0ca_173 ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .dot-time-575{
+        display: none !important;
+    }
+    ._subHeadWrapper_1u0ca_173 {
+        align-items: self-end;
+    }
+}
+@media (max-width: 540px) {
+    ._courseName_pzdoh_152 {
+       
+        font-size: 21px;
+  
+    }
+    ._textContent_pzdoh_171 {
+
+        font-size: 12px;
+  
+    }
+}
+@media (min-width: 740px) {
+    .index-module_row__-AHgh {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .index-module_m-12__2CxUL {
+        width: 100%;
+    }
+    .index-module_m-1__RBwzD, .index-module_m-2__2abUr, .index-module_m-3__27S15, .index-module_m-4__30Uoi, .index-module_m-5__3ruG1, .index-module_m-6__30cxf, .index-module_m-7__1YGzj, .index-module_m-8__1Qk6Z, .index-module_m-9__1esJF, .index-module_m-10__3r8Vz, .index-module_m-11__q46xN, .index-module_m-12__2CxUL {
+        display: block;
+    }
+    .index-module_col__2EQm9 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
