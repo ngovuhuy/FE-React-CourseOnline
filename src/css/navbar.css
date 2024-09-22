@@ -118,6 +118,89 @@ body .slick-dots li.slick-active button:before {
 
     color: #998282 !important;
 }
+._myLearn_vdbp4_31 {
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    color: #333;
+    background-color: transparent;
+}
+._actionBtn_vdbp4_112 {
+    padding: 8px;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+}
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+._actions_vdbp4_99 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+._action-icon_vdbp4_107 {
+    color: #707070;
+    font-size: 20px;
+}
+.svg-inline--fa {
+    display: inline-block;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+._avatar-wrapper_vdbp4_124 {
+    margin-left: 12px;
+}
+
+._avatar_hzxfy_1 {
+    font-size: 3.2px;
+    background: transparent;
+    border-radius: 50%;
+}
+._avatar_vdbp4_124{
+    width: 28px;
+    border-radius: 50%;
+}
+
+.click-avatar{
+        box-shadow: 0 -4px 32px #0003;
+        padding: 4px 0px;
+        position: absolute;
+        right: 0;
+        top: 36px;
+        width: 230px;
+        background: #fff;
+        border-radius: 15px;
+}
+._username_12z5x_33 {
+    font-size: 14px;
+    color: #757575;
+}
+.gach-index{
+    margin: 8px 0;
+  
+}
+.avatar-min img{
+    width: 50px;
+    border-radius: 50%;
+}
+.ul-list{
+    padding: 15px 30px;
+}
+.item-ul{
+    font-size: 14px;
+    color: #666;
+    display: block;
+    padding: 6px 0;
+    cursor: pointer;
+}
 @media screen and (max-width: 992px) {
     .btn-dangnhap{
         font-size: 0.9rem;
